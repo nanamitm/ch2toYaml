@@ -13,7 +13,7 @@ namespace ch22yaml.Data
 
         public byte TuningSpace { get; set; }
 
-        public ushort Channel { get; set; }
+        public byte Channel { get; set; }
 
         public UInt16? RemoteNumber { get; set; }
 
@@ -76,7 +76,7 @@ namespace ch22yaml.Data
                         {
                             item.TuningSpace = valTuningSpace;
                         }
-                        if (ushort.TryParse(tmp[2], out var valChannel))
+                        if (byte.TryParse(tmp[2], out var valChannel))
                         {
                             item.Channel = valChannel;
                         }

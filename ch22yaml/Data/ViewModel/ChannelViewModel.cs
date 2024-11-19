@@ -13,7 +13,7 @@
 
         public CHType Type { get => mCH.Type;}
 
-        public byte Channel { get => mCH.Channel; set => mCH.Channel = value; }
+        public ushort Channel { get => mCH.Channel; set => mCH.Channel = value; }
 
         public ushort ServiceID { get => mCH.ServiceID; set => mCH.ServiceID = value; }
 
